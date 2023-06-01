@@ -11,9 +11,25 @@
 
 
 </head>
-<body onload="displayGreeting(), changingImage()">
-	<h1 id="greeting"></h1>
-	
+<body>
+	<h3> <span id="demo"></span> ,       Welcome to my portifolio</h3>
+	<script>
+		var greeting= document.getElementById("demo")
+		var date= new Date();
+		var hours= date.getHours();
+		var mins= date.getMinutes();
+		if(hours<12){
+			greeting.innerHTML= "GOOD MORNING";
+		}
+		else if( hours >= 12 && hours < 16)
+		{
+			greeting.innerHTML="GOOD AFTERNOON";
+		}
+		else{
+			greeting.innerHTML= "GOOD EVENING";
+		}
+
+	</script>
 	<nav>
 		<a href="working.html">items</a>
 		<a href="working.html">item</a>
@@ -71,6 +87,7 @@
 	
 	  	</div>
 	  </footer>
+	
 	
 </body>
 </html>
