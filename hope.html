@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8">
+<title>HOME PAGE</title>
+<meta name="keywords" content="example, JavaScript Form Validation, Sample registration form" />
+<meta name="description" content="This document is an example of JavaScript Form Validation using a sample registration form. " />
+
+</head>
+<h1 style="color: brown;">greeting</h1>
+    
+<body onload="document.registration.userid.focus();">
+	
+    <div class="container">    <span id="demo"></span>    </div>
+	<h3>   Welcome to my portifolio</h3>
+	<script>
+		var greeting= document.getElementById("demo")
+		var date= new Date();
+		var hours= date.getHours();
+		var mins= date.getMinutes();
+		if(hours<12){
+			greeting.innerHTML= "GOOD MORNING";
+		}
+		else if( hours >= 12 && hours < 16)
+		{
+			greeting.innerHTML="GOOD AFTERNOON";
+		}
+		else{
+			greeting.innerHTML= "GOOD EVENING";
+		}
+
+	</script>
+
+This is the second project and web designed by Norah Kanyumba, Student at Mzuzu university student registration number (BICT1021).
+you may use the following form to get in contact with me.
+
+<p>my skills</p>
+<h1>CLIENT FORM FOR CONTACT</h1>
+
+<form name='registration' onSubmit="sino.php">
+<ul>
+<li><label for="userid">User id:</label></li>
+<li><input type="INT" name="userid" size="12" /></li>
+<li><label for="passid">Pin:</label></li>
+<li><input type="password" name="passid" size="4" /></li>
+<li><label for="username">Name:</label></li>
+<li><input type="text" name="username" size="12" /></li>
+<li><label for="address">Address:</label></li>
+<li><input type="text" name="address" size="50" /></li>
+<li><label for="country">SKILLS:</label></li>
+<li><select name="UNIVERSITY">
+<option selected="" value="Default">(Please select your skills)</option>
+<option value="NK">ACTING SKILLS</option>
+<option value="NM">TEACHING SKILLS</option>
+<option value="NN">PROGRAMMING SKILLS</option>
+<option value="BN">TYPING SKILLS</option>
+<option value="DN">DECISION MAKING AND PROBLEM SOLVING SKILLS</option>
+</select></li>
+
+<li><label for="email">Email:</label></li>
+<li><input type="text" name="email" size="50" /></li>
+
+<li><input type="submit" name="submit" value="Submit" /></li>
+</ul>
+</form>
+</body>
+</html>
